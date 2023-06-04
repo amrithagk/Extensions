@@ -9,5 +9,6 @@
     },
     "permissions" : [
         "tabs"
-    ]
+    ],
+    "author" : "Amritha GK"
 }
