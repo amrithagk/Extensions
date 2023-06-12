@@ -23,6 +23,16 @@ function getTabList()
             display(result);
         });
 
+    /* chrome.tabs.executeScript(
+        {
+            code : "window.getSelection().toString();",
+            function(selection)
+            {
+                console.log(selection);
+            }
+        }
+    ); */
+
 }
 
 document.addEventListener("DOMContentLoaded", getTabList)

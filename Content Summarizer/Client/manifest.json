@@ -1,7 +1,7 @@
 {
     "manifest_version":3,
     "name":"Content Summarizer",
-    "version":1.0,
+    "version":"1.0",
     "description":"To help with your TL;DR moments",
     "author":"Amritha GK",
     "permissions":[
@@ -10,5 +10,11 @@
     "action" : {
         "default_popup": "page.html",
         "default_title": "Content Summarizer"
-    }
+    },
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["content_script.js"]
+        }
+    ]
 }

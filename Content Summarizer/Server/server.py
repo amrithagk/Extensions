@@ -5,6 +5,7 @@ app = Flask(__name__)
 @app.route("/api/summarizer", methods=["POST"])
 def summarize():
 
+    print("request = ", request)
     data = request.get_json()
     text = data['text']
     
