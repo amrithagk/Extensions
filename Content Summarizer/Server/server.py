@@ -7,10 +7,13 @@ def summarize():
 
     print("request = ", request)
     data = request.get_json()
+    print("data", data)
     text = data['text']
+    print("text", text)
     
     #extractive summarizer
     summary = textsummarizer.summarizer(text, 10)
+    print(summary)
     summary_json = jsonify({"summary":summary})
 
     return summary_json
