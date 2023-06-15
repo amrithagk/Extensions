@@ -8,5 +8,10 @@ A few Google Chrome Browser Plugins with simple applications
  - Click on 'Load unpacked'
  - Select the desired folder containing the extension
 
-## test plugin
+## Tab list
 This extension displays a list of the tabs open in the window, with their corresponding links
+
+## Content Summarizer
+This extension generates a summary of the text content in a webpage
+
+#### Author: Amritha GK
