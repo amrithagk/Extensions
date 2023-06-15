@@ -1,15 +1,21 @@
 function handleMessage(message)
 {
-    console.log("handle message", message);
+    //message is a JavaScript object returned from the code in content_script.js
+
     let options = {
         method:"POST", 
         headers:{"Content-Type":"application/json"},
-        body:message};
+        body:JSON.stringify(message)
+    };
     
     fetch("http://127.0.0.1:5000/api/summarizer", options)
-        .then((summary)=>{
-            console.log("summary", summary)
-            document.getElementById("summary").innerText += summary;
+        .then(response=>response.json())
+        .then((data)=>{
+            /*
+            above, response is a promise object returned containing the response from the server
+            data is the Json object of the response data.
+            */
+           document.getElementById("summary").innerText = data["summary"];
         });
 }
 
