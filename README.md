@@ -9,7 +9,8 @@ A few Google Chrome Browser Plugins with simple applications
  - Select the desired folder containing the extension
 
 ## Tab list
-This extension displays a list of the tabs open in the window, with their corresponding links
+This extension displays a list of the tabs open in the window, with their corresponding links.  
+Click the link in the pop-up to switch tabs easily.
 
 ## Content Summarizer
 This extension generates a summary of the text content in a webpage
