@@ -1,11 +1,11 @@
 {
     "manifest_version" : 3,
-    "name" : "Tab features",
+    "name" : "Tab list",
     "version" : "1.0.0",
-    "description" : "to test tab api features",
+    "description" : "Lists the active tabs",
     "action" : {
         "default_popup" :"index.html",
-        "default_title" : "tab api features"
+        "default_title" : "List of active tabs"
     },
     "permissions" : [
         "tabs"
